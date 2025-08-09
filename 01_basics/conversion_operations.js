@@ -22,9 +22,13 @@ let neg = -value;
 console.log(2+2);
 console.log(2-2);
 console.log(2*2);
-console.log(2**3);
+console.log(2**3);// this is called 2 raised to the power 3
 console.log(2/3);
-console.log(2%3);*/
+console.log(2%3);
+// string addition
+// let str1="hello";
+// let str2=" world";
+// let string str3=str1+str2;=> this will give output as hello wworld;
 
 /*console.log("1"+2); // it acts as strings
 console.log(1+"2");// it also acts as strings
