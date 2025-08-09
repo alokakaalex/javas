@@ -1,6 +1,7 @@
 "use strict"; // use newer version of js
 
-//alert(3+2)// used to give pop ups but in the browser, different syntax for this in node
+//alert(3+2)// used to give pop ups but in the browser, different syntax for this in node.js
+// code readability should be the main focus while writing code
 
 let name = "hitesh"; //strings
 let age = 15; //int
@@ -10,9 +11,9 @@ let isLoggedIn = false; //bool
 // bigint
 //string=>""
 //boolean=>true/false
-//null => standalone value
+//null => standalone value, a representation of empty
 // undefined => value not assigned
-// symbol => to find uniqueness
+// symbol => to find uniqueness(used in react)
 
 
 //object
