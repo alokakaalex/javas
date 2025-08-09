@@ -6,9 +6,11 @@ let score = 33;
 let number = "56";
 let valueInNumber = Number(number); //it will convert anything to number
 //console.log(valueInNumber); 
+// null will get converted to 0 in number as null represent empty
+// undefined will get converted to NaN using this method
 
 // "33"=> 33
-// "33abc" => will get convert but value will be NaN
+// "33abc" => will get convert but value will be NaN by the above method
 // true=>1
 
 // 1->true, 0=>false, ""=> false, "hitesh"=> true
