@@ -3,7 +3,7 @@
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100
-const scoreValue = 100.3
+const scoreValue = 100.3 // java script is dynamically typed language since we dont have to declare the data type while declaring variable
 
 const isLoggedIn = false
 const outsideTemp = null
@@ -39,3 +39,4 @@ console.log(typeof anotherId);
 
 
 // stack(primitive) , heap(non primitive)
+// data type of all non primitive using type of is object only and that of function is 
