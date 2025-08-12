@@ -9,7 +9,7 @@ if(true){
 
 console.log(username); // this will through an error
 
-// +++++++++++++++++++++++interesting++++++++++++++++++++++
+// +++++++++++++++++++++++interesting++++++++++++++++++++++++++++++++++++++++++++
 addone(5);//this will work if we declare it before the function definition
 function addone(value){ 
     return value+1;
