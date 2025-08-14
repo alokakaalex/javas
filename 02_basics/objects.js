@@ -1,7 +1,7 @@
 // singleton
 //whenever we create object in constructor way, then singleton objects forms other wise in literals way singleton doesnt form
 // object literals
-const sym= Symbol("key1");
+const sym= Symbol("key1");// creation of symbol
 const Jsuser={
     name:"hitesh",
     [sym]:"key1", // if we want to use symbol, then we need to declare it using [], similarly for accessing the symbol we use []
@@ -13,28 +13,31 @@ const Jsuser={
 
 };
 
-//console.log(Jsuser.email); // one way of accessing the object through .method
-//console.log(Jsuser["email"]); // another way of accessing the object through []method
-// to freeeze any object so that no one can change its parameters in ftuture
+//console.log(Jsuser.location); // one way of accessing the object through .method
+//console.log(Jsuser["location"]); // another way of accessing the object through []method
+// to freeeze any object so that no one can change its parameters in future
 //Object.freeze(Jsuser);
 
-// we can even add functions to the objects
-Jsuser.greetings = function(){
-    console.log(`Hello ji JS user!, ${this.name}`);
-}
+// Jsuser.born_place="New Delhi"; // we can add new paramteres to the objects in this way
+// console.log(Jsuser["born_place"]);
 
-//console.log(Jsuser.greetings);
-//console.log(Jsuser.greetings());
+// we can even add functions to the objects
+// Jsuser.greetings = function(){
+//     console.log(`Hello ji JS user!, ${this.name}`);
+// }
+
+// console.log(Jsuser.greetings); // it will simply tells us that greetings is a function and would not perform the tsak assigned
+// console.log(Jsuser.greetings()); // this will give the result of the function
 
 // +++++++++++++++++++++++++++++++++++++++objects continue++++++++++++++++++++++++++++++++++++
  //objects with the help of constructr
 const tinderUser= new Object(); // singleton object
 const tinder_User ={}; // non-singleton object
-console.log(tinderUser);
+// console.log(tinderUser);
 tinderUser.id="123abc";
 tinderUser.name="Jolly";
 tinderUser.isLoggedIN= false;
-//console.log(tinderUser);
+// console.log(tinderUser);
 
 const regularuser={
     email:"some@gmail.com",
@@ -49,14 +52,14 @@ const regularuser={
 
 }
 
-console.log(regularuser.full_name);
+//console.log(regularuser.full_name.userfullname.firstname);
 
 
 // how to combine objects
 const obj1={1:"a",2:"b"}
 const obj2={3:"a",4:"b"}
 
-const obj3= Object.assign({},obj1,obj2);
+const obj3= Object.assign({},obj1,obj2);// assign method is used to combine two objects
 console.log(obj3);
 
 
@@ -76,9 +79,9 @@ const users=[
     }
 ];
 
-console.log(users[0].email);
+console.log(users[0]["email"]);
 
-console.log(Object.keys(tinderUser));
+console.log(Object.keys(tinderUser)); // return all the keys of the objects in the form of an array
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
@@ -93,5 +96,5 @@ const course ={
 }
 
 // course.courseInstructor; one of the way to access parameters
-const{courseInstructor: instructor} = course; // if we see{ } we can assume that destructuring is going to happen
+const{courseInstructor: instructor} = course; // if we see{ } we can assume that destructuring is going to happen,here course represents the object from where we have to ecxtract the values
 console.log(instructor);
