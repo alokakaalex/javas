@@ -1,33 +1,33 @@
-function saymyname() {
-    console.log("Alok");
+// function saymyname() { // defining a function
+//     console.log("Alok");
+// }
 
-}
-
-saymyname() // to call or execute a function
+// saymyname(); // to call or execute a function
 
 // function addNumbers(num1,num2){
 //     console.log(num1+num2);
-// }
+//  }
 
-//addNumbers(5,'4');
+// addNumbers(5,'4');
 
 // function addNumbers(num1,num2){
-//     const result= num1+num2;
-//     return result;
-// }
+// //     const result= num1+num2;
+// //     return result;
+    
+// // }
 
-// console.log(typeof addNumbers(4,5));
+// // console.log(typeof addNumbers(5,4));
 
 // function loginUser(username){
-//     return `${username} just logged in`
-// }
+//      return `${username} just logged in`
+//  }
 
-//console.log(loginUser("alok")); // if we dont pass any parameter then by defualt undeffined is assigned
-// function loginUser(username="Jagdishwar Mishra"){
-//     return `${username} just logged in`
-// }
+// console.log(loginUser("alok")); // if we dont pass any parameter then by defualt undeffined is assigned
+ function loginUser(username="Jagdishwar Mishra"){
+     return `${username} just logged in`
+}
 
-// console.log(loginUser()); // we can even set default value of the parameters of the functions and when someone enter some othr parameter then it will get overwritten
+console.log(loginUser("alok mishra")); // we can even set default value of the parameters of the functions and when someone enter some othr parameter then it will get overwritten
 
 
 // case when we dont know how many parameters are going to come

@@ -8,18 +8,18 @@ const user={
     }
 }
 
-//  user.welcomeMessage();
-//  user.username ="jolly";
-//  user.welcomeMessage();
+user.welcomeMessage();
+user.username ="jolly";
+user.welcomeMessage();
 
-// console.log(this); // this will give empty object in node environment but if we run it on chrome it gives windows as the global object
+console.log(this); // this will give empty object in node environment but if we run it on chrome it gives windows as the global object
 
-// function chai(){
-//     let username="hitesh"
-//     console.log(this);// here in node we can access the current context in this manner but we can not use this.username
-// }
+function chai(){
+    let username="hitesh"
+    console.log(this);// here in node we can access the current context in this manner but we can not use this.username
+ }
 
-// chai();
+chai();
 
 
 const chai =() =>{ // here we have removed function keyword and used => instead hence called arrow function
